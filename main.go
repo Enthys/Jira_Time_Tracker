@@ -3,8 +3,6 @@ package main
 import (
 	"fmt"
 	"github.com/andygrunwald/go-jira"
-	"log"
-	"net/http"
 	"os"
 	"os/exec"
 	"regexp"
