@@ -38,12 +38,6 @@ func main() {
 
 	_, _, err = client.Issue.AddWorklogRecord(issueTag, &jira.WorklogRecord{
 		TimeSpent: time,
-	}, func(request *http.Request) error {
-		log.Println(request.Host)
-		log.Printf("%+v\n", request.Header)
-		log.Println(request.URL.String())
-
-		return nil
 	})
 
 	if err != nil {
